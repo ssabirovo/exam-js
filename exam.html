@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./exam.css" />
+  </head>
+  <body>
+    <div class="d-flex justify-content-center mt-4">
+      <p class="text-success fs-5">Cucumbero</p>
+    </div>
+    <div class="container d-flex justify-content-center mt-5 gap-3">
+      <button class="btn btn-success minutBtn">25 minut</button>
+      <button class="btn btn-success minutBtn">15 minut</button>
+      <button class="btn btn-success minutBtn">5 minut</button>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5 p-5">
+      <p
+        id="timer"
+        class="bg-success px-5 py-2 text-light d-flex justify-content-center align-items-center rounded-circle"
+        style="width: 300px; height: 300px; font-size: 4rem"
+      >
+        00:00
+      </p>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5 gap-4">
+      <div style="position: relative;">
+        <button class="btn btn-success" onclick="inputChange()" id="startBtn">
+          play
+        </button>
+        <button class="btn btn-success" id="stopBtn">pause</button>
+        <button class="btn btn-success" id="bigStopBtn">stop</button>
+      </div>
+    </div>
+
+    <script src="./jossa.js"></script>
+  </body>
+</html>

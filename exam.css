@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+#startBtn {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: none; */
+}
+#stopBtn {
+  z-index: -12;
+  margin-right: 2rem;
+}
